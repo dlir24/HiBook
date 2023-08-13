@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link of css -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="userpage.css">
+    <!-- font icon and font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@200;400;600&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>hi book</title>
+</head>
+<body class="body" id="body">
+    <div class="all" id="all">
+    
+        <!-- start nav bar -->
+        <nav id="nav">
+
+            <div class="right">
+                <h6 class="Tarmeez">Tarmeez</h6>
+                <div class="pages">
+                    <p class="home" onclick="gohome()">Home</p>
+                    <p class="profile" onclick="gotoprofile()">Profile</p>
+                </div>
+            </div>
+
+            <div class="navbuttons"></div>
+
+        </nav>
+        <!-- end nav bar -->
+
+        <!-- info user -->
+        <div class="detailusercard">
+
+            <!-- <div class="centering1" >
+                <i class="fa-solid fa-user photouser1"></i>
+            </div>
+
+            <div class="names">
+                <p class="name" id="name">name</p>
+                <p class="username" id="username">username</p>
+                <p class="email" id="email">email</p>
+            </div>
+
+            <div class="numpostsandcommands">
+                <p class="postnum" id="postnum">30 <span>posts</span></p>
+                <p class="commandsnum" id="commandsnum">22 <span>commands</span></p>
+            </div> -->
+
+        </div>
+        <!-- info user -->
+
+        <!-- start content -->
+
+         <div class="allcontent"></div>
+        <!--<div class="content">
+            <div class="imgofuser">
+                <div class="centering">
+                    <img src="photo2.jfif" class="personalimage">
+                </div>
+                <p class="name">dler</p>
+                <button id="editbtn" onclick="showeditcard()">edit</button>
+                <button id="deletebtn" onclick="showdeletcard()">delete</button>
+            </div>
+            
+            <div>
+
+                <img id="photo" class="photo" src="photo1.jfif" >
+
+                <div class="timeanddes">
+                    <p id="time" class="time">2 days ago</p>
+                    <h5 class="title">hi every one</h5>
+                    <h4 id="title" class="des">jak;lfjak;fjka;j</h4>
+                </div>
+
+                <hr>
+
+                <div class="tagsandcommands">
+                    <i class="fa-solid fa-pen pen"></i>
+
+                    <div class="numofcommands">
+                        <p class="numberofcommands"></p>
+                        <h4>commands</h4>
+                    </div>
+
+                    <div class="tags">
+                        <div class="tag">hkjaf;ljaf</div>
+                    </div>
+                </div>
+            </div>
+            </div> -->
+        <!-- end content -->
+    </div>
+    
+    <div class="createpostbutton"></div>
+
+    <!-- loader -->
+    
+    <div id="loader">
+        <img src="Infinity-1s-200px (1).svg">
+    </div>
+
+    <!-- back to top -->
+
+    <div id="btntop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <button id="darkandlight">
+        <!-- <i class="fa-solid fa-sun"></i> -->
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+</div>
+</body>
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<script src="userpage.js"></script>
+<script src="main.js"></script>

@@ -1,0 +1,673 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alexandria', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+.black{
+    background-color: black;
+    opacity: 0.7;
+    position: fixed;
+    z-index: 2;
+    width: 102vw;
+    height: 191vh;
+    position: fixed;
+    top: 0;
+}
+
+.all{
+    width: 97vw;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin: auto 0;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+/* start nav bar */
+
+nav{
+    background-color: white;
+    width: 75vw;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-end-end-radius:10px;
+    border-end-start-radius:10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition: top 0.3s 
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tarmeez{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.pages{
+    display: flex;
+}
+
+.home{
+    margin-left: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.profile {
+    margin-left: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.navbutton{
+    color:darkturquoise;
+    background-color: white;
+    border: 1px darkturquoise solid;
+    width: 60px;
+    height: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#login{
+    margin-right: 5px;
+}
+
+.navbuttons{
+    cursor:context-menu;
+    display: flex;
+}
+
+.circle , .navimage{
+    width: 25px ;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.navbutton , .logout{
+    color:darkturquoise;
+    background-color: white;
+    border: 1px darkturquoise solid;
+    width: 60px;
+    height: 25px;
+    border-radius: 6px;
+}
+
+.logout{
+    border: 1px red solid;
+    color: red;
+    cursor: pointer;
+}
+
+.navbuttonstologout{
+    display: flex;
+    align-items: center;
+}
+
+.navname{
+    margin-right: 10px !important ;
+    width: fit-content !important;
+    font-size: 16px;
+    cursor:context-menu;
+}
+
+.navnamelogout{
+    width: 100% !important;
+}
+
+.navimage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+
+
+/* end nav bar */
+
+/* start content */
+
+.content{
+    background-color: white;
+    border-radius: 5px;
+    width: 60vw;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.content:first-child{
+    margin-top: 45px;
+}
+
+.imgofuser{
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.personalimage{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.photouser{
+    font-size: 15px;
+}
+
+.name{
+    font-weight: 600;
+}
+
+#editbtn{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 40px;
+    background-color: white;
+    border: 1px #50C878 solid;
+    color: #50C878;
+    border-radius: 4px;
+    height: 30px;
+}
+
+#deletebtn{
+   cursor: pointer;
+    width: 55px;
+    background-color: white;
+    border: 1px #fe1a1a solid;
+    color: #fe1a1a;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.photo{
+    width: 100%;
+}
+
+.timeanddes{
+    padding-left: 12px;
+    margin: 10px 0;
+}
+
+.time{
+    color: gray;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.des{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+hr{
+    color: gray;
+    margin: 0 10px;
+    margin-bottom: 8px;
+}
+
+.tagsandcommands{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    padding-bottom: 8px;
+}
+
+.numofcommands , .tags{
+    display: flex;
+    margin-left: 7px;
+    font-size: 13px;
+}
+
+.numberofcommand{
+    margin-right: 5px ;
+}
+
+.tag {
+    margin-right: 5px;
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    padding: 2px;
+    padding-right: 7px;
+    padding-left: 7px;
+}
+
+/* end content */
+
+/* start login card */
+
+.containeroflogin , .containerofregister , .containerofpost{
+    background-color: white;
+    width: 50vw;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    margin: 0 calc(50vw/2);
+    top: 15px;
+    transition: opacity 1s;
+    animation: showup 0.75s;
+}
+
+@keyframes showup {
+    from{
+        opacity: 0 ;
+        top: -30px;
+    }
+
+    to{
+        opacity: 1;
+        top: 15px;
+    }
+}
+
+.loginandx , .registerandx , .postandx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nameoflogin , .h4ofprofileimage , .usernameofregister{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.a{
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    border: 1px gray solid;
+    border-right: none;
+}
+
+.hrbutton , .hrname , .hrimage{
+    margin-top: 10px;
+}
+
+input{
+    padding: 5px;
+}
+
+.login-name , .login-password ,
+.register-name , .register-password ,
+.bodyofpost {
+    width: 100%;
+    height: 25px; 
+}
+
+.login-password{
+    margin-bottom: 10px;
+}
+
+.buttonoflogin{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loginbutton , .cancle , .register {
+    height: 25px;
+    width: 60px;
+    border: none;
+    border-radius: 4px;
+}
+
+.loginbutton , .register{
+    margin-left: 10px;
+    background-color: aquamarine;
+}
+
+.cancle{
+    background-color: gainsboro;
+}
+
+/* end login card */
+
+/*  start register card  */
+
+.inputofprofile , .imageofpost{
+    display: flex;
+    margin-bottom: 10px ;
+    border: solid gray 0.5px;
+    width: 100%;
+    padding: 0;
+    border-radius: 3px;
+}
+
+.nameregister{
+    margin-top: 10px;
+}
+
+.inputofprofile{
+    margin-bottom: 0 
+}
+
+.nameofregister , .titleofpost{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/*  end register card  */
+
+.fa-xmark , .cancle , .loginbutton , .register ,.createpost{
+    cursor: pointer;
+}
+
+.centering2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 1;
+    bottom: 7%;
+    right: 45px;
+    cursor: pointer;
+}
+
+
+.photouser2{
+    font-size: 25px;
+}
+
+#notivecation{
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: fit-content;
+    padding: 5px;
+    z-index: 1000;
+    color: white;
+    border-radius: 5%;
+    opacity: 0.9;
+    transition: opacity 1s;
+    animation: showupnotivacation 1.5s;
+}
+
+@keyframes showupnotivacation {
+    from{
+        opacity: 0 ;
+        left: -30px;
+    }
+
+    to{
+        opacity: 1;
+        left: 30px;
+    }
+}
+
+/* loader */
+
+#loader{
+    width: fit-content;
+    height: fit-content;
+    position: fixed;
+    bottom: 5%;
+    left: 1%;
+    z-index: 99999;
+    margin: auto;
+    visibility: visible;
+}
+
+#loader img {
+    width: 120px;
+}
+
+#btntop{
+    position: fixed;
+    display: none;
+    z-index: 4;
+    bottom: 20%;
+    right: 38px;
+    border-radius: 50%;
+    background-color: #00d8ff;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    cursor: pointer;
+    animation: showupbtnup 4s;
+}
+
+@keyframes showupbtnup {
+    from{
+        opacity: 0 ;
+    }
+
+    to{
+        opacity: 0.7;
+    }
+}
+
+.fa-arrow-up{
+    font-size: 40px;
+    color: #222222;
+}
+
+/* dark and light mode */
+
+#darkandlight{
+    background-color: black !important;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 65px;
+    left: 35px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.fa-moon , .fa-sun{
+    color: white;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    nav{
+        width: 100vw;
+        padding: 0px 8px;
+    }
+    .Tarmeez{
+        font-size: 11px;
+    }
+    .pages{
+        align-items: center;
+    }
+    .home{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+    .profile{
+        font-size: 10px;
+        margin-left: 8px;
+    }
+    .navimage{
+        width: 30px;
+        height: 30px;
+    }
+    .navname , .centering  {
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .logout{
+        width: 50px;
+        font-size: 10px;
+    }
+    .navbutton{
+        width: 50px;
+        font-size: 10px;
+    }
+    .content{
+        width: 70vw;
+        margin-bottom: 15px;
+    }
+    .imgofuser{
+        padding: 10px;
+    }
+    .name{
+        font-size: 12px;
+    }
+    .time ,  .tag{
+        font-size: 8px;
+    }
+    .title , .tagsandcommands , .numberofcommand , h4 {
+        font-size: 12px;
+    }
+    .des {
+        font-size: 10px;
+    }
+    .timeanddes{
+        margin: 7px 0;
+        padding-left: 10px;
+    }
+    #loader{
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    #loader img {
+        width: 150px;
+    }
+    #btntop  {
+        width: 40px;
+        height: 40px;
+        right: 5px;
+        bottom: 26%;
+    }
+    #darkandlight {
+        left: 87%;
+        top: 86vh;
+        width: 35px;
+        height: 35px;
+    }
+    .fa-arrow-up{
+        font-size: 28px;
+    }
+    .centering2{
+        right: 5px;
+        bottom: 16%;
+    }
+    #btndeleteandedit{
+        display: flex;
+    }
+    #editbtn{
+        font-size: 12px;
+        width: 35px;
+    }
+    #deletebtn{
+        font-size: 12px;
+        width: 45px;
+    }
+
+    /* login card */
+
+    .containeroflogin, .containerofregister, .containerofpost{
+        width: 85vw;
+        padding: 10px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    #nameofregister{
+        margin-top: 10px;
+    }
+
+    .containerofpost{
+        margin: auto;
+        right: 0;
+        left: 0;
+    }
+    .inputofprofile{
+        margin: 0;
+    }
+    
+    #notivecation{
+        font-size: 12px;
+        bottom: 30px;
+        left: 10px;
+        animation: showupnotivacation 1.5s;
+    }
+    
+    @keyframes showupnotivacation {
+        from{
+            opacity: 0 ;
+            left: -30px;
+        }
+    
+        to{
+            opacity: 1;
+            left: 10px;
+        }
+    }
+    .fa-xmark{
+        top:5px;
+        right: 7px;
+    }
+    .postandx{
+        margin-top: 5px;
+    }
+    #inputcomment {
+        margin-top: 1px;
+    }
+
+}
