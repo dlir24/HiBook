@@ -220,8 +220,6 @@ function getpostsafterchange(page = 1){
     axios.get(`https://tarmeezacademy.com/api/v1/posts?limit=10&page=${page}`)
 
     .then(function (response) {
-
-        console.log(response)
         
         let detail = response.data.data
 
@@ -312,7 +310,6 @@ function getpostsafterchange(page = 1){
         
     })
     .catch(function (error) {
-        console.log(error)
 
         unvisibleloader()
         notivaction(error.response.data.message , red)
